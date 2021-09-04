@@ -1,0 +1,645 @@
+/* ---------------------------------------------------*/
+/* BASIC SETUP */
+/* ---------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width:1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 0;
+}
+
+/* ---------------------------------------------------*/
+/* BASIC HEADER STYLE */
+/* ---------------------------------------------------*/
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 235%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 175%;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 30px;
+	font-family: biorhyme;
+	font-weight: 400;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 5px;
+    color: #cbcbcb;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* ---------------------------------------------------*/
+/* MAIN HEADER */
+/* ---------------------------------------------------*/
+
+/* Pizza Collage */
+
+.pizza-collage {
+	width: 20%;
+	height: 10%;
+}
+
+.pizza-1 {
+	max-width: 100%;
+    height: auto;
+	margin-left: 1000px;
+	margin-top: px;
+	opacity: 85%;
+}
+
+.pizza-collage-2 {
+	width: 20%;
+	height: 10%;
+}
+
+.pizza-2 {
+	max-width: 100%;
+    height: auto;
+	margin-left: 1150px;
+	margin-top: 125px;
+	opacity: 85%;
+}
+
+.pizza-collage-3 {
+	width: 20%;
+	height: 5%;
+}
+
+.pizza-3 {
+	transform: rotate(270deg);
+	max-width: 100%;
+    height: auto;
+	margin-left: 900px;
+	margin-top: 60px; 
+	opacity: 85%;
+}
+
+header {
+    background-color: rgba(252, 218, 197, 0.58);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.pizza-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: BioRhyme;
+}
+
+.pizza-text-box h1 {
+    font-weight: 300;
+    text-shadow: 0 2px 2px rgba(160, 160, 160, 0.57);
+	color: #000;
+}
+
+/* ---------------------------------------------------*/
+/* MAIN NAVIGATION */
+/* ---------------------------------------------------*/
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 105%;
+    transition: border-bottom 0.2s;
+    font-weight: bolder;
+	text-shadow: 2px 3px 3px #f07b13;
+    transition: color 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #e67e22;
+	text-shadow: 2px 3px 3px #ffffff;
+	
+}
+
+/* STICKY NAVI */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.main-nav {
+    margin-top: 15px;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+	padding-top: 100px;
+	vertical-align:middle;
+    color: #767676;
+	text-shadow: none;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+    color: #e67e22;
+}
+.sticky .logo-big { display: none; }
+.sticky .logo-small { display: block; }
+
+/* ---------------------------------------------------*/
+/* BUTTONS */
+/* ---------------------------------------------------*/
+.btn-ghost:link,
+.btn-ghost:visited, 
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #e67e22;
+    color: #e67e22;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-top: 10px;
+}
+
+pizza-collage,
+pizza-collage-1,
+pizza-collage-2 {
+	display: none;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    text-shadow: 0 2px 2px #e67e22;
+    color: #fff;
+    background-color: #e67e22;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    text-shadow: 0 2px 2px #e67e22;
+    color: #fff;
+    background-color: #ffa700;
+}
+ 
+/* ---------------------------------------------------*/
+/* LOGO */
+/* ---------------------------------------------------*/
+.logo-big {
+    height: 140px;
+    width: auto;
+    float: left;
+    margin-top: -30px;
+    opacity: 80%;
+    padding: -10px -20px;
+    text-shadow: 0 2px 2px #e67e22;
+}
+
+.logo-small {
+    display: none;
+	height: 100px;
+    width: auto;
+    float: left;
+    margin-top: -15px;
+    opacity: 80%;
+    text-shadow: 0 2px 2px #e67e22;
+}
+/* ---------------------------------------------------*/
+/* SECTION 1 ABOUT US */
+/* ---------------------------------------------------*/
+.section-about-us {
+    background-color: #f4f4f4;
+}
+
+.section-about-us .long-copy {
+    margin-bottom: 40px;
+}
+
+.section-about-us h3 {
+    color: #818080;
+    font-weight: 400;
+}
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+	font-family: BioRhyme;
+	font-weight: 400;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 165%;
+	font-weight: 300;
+}
+
+/*-------- Icons --------*/
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------*/
+/* SECTION 2 MENU */
+/* ---------------------------------------------------*/
+.section-menu {
+    padding: 0;
+}
+
+.new-items {
+	padding-bottom: 100px;
+}
+
+.bestseller {
+	padding-bottom: 50px;
+}
+
+.bestseller h3 {
+	padding-bottom: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+	margin: 0;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meals-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meals-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s; 
+}
+
+.meals-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content:'.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.meals-showcase h3 {
+	font-size: 150%;
+	text-align: center;
+	color: #555;
+	font-weight: 400;
+	font-family: cursive;
+	padding-bottom: 25px;
+}
+
+.pizza-name {
+	text-align: center;
+	font-family: fantasy;
+	padding-bottom: 10px;
+}
+
+.icon-star {
+	font-size: 200%;
+    display: block;
+    color: #e6cf22;
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------*/
+/* SECTION 3 HOT DEALS */
+/* ---------------------------------------------------*/
+.section-deals {
+	background-color: #f4f4f4;
+	padding-top: 20px;
+}
+
+.section-deals h2 {
+	font-family: biorhyme;
+	font-weight: 400;
+}
+
+.deals-showcase {
+    list-style: none;
+    width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.deals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.deals-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.14);
+}
+
+.deals-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: transform 0.5s, opacity 0.5s; 
+}
+
+.deals-photo img:hover {
+    opacity: 1;
+    transform: scale(1.10);
+}
+
+.fire {
+	text-align: center;
+	color: #c2261f;
+}
+
+/* ---------------------------------------------------*/
+/* SECTION 4 TEAM */
+/* ---------------------------------------------------*/
+.section-team {
+    background-color: #ffffff;
+}
+
+.team {
+    width: 200%;
+    background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+    width: 400%;
+    flex-basis: 40%;
+    margin-right: 0;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+    text-align: center;
+	font-family: monospace;
+}
+
+.team-icon {
+    text-align: center;
+}
+
+.section-team h2 {
+    padding-bottom: 20px;
+}
+
+/* ---------------------------------------------------*/
+/* SECTION 5 TESTIMONIALS */
+/* ---------------------------------------------------*/
+.section-testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+   padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* ---------------------------------------------------*/
+/* SECTION 6 FORM */
+/* ---------------------------------------------------*/
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+/* ---------------------------------------------------*/
+/* FOOTER */
+/* ---------------------------------------------------*/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-contact {
+    list-style: none;
+    float: left;
+}
+
+.partners {
+    list-style: none;
+    float: right;
+    color: #888;
+}
+
+.social-links {
+    list-style: none;
+    float: center;
+    margin-left: 100px;
+}
+
+.footer-contact li,
+.social-links li,
+.partners li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-contact li:last-child,
+.social-links li:last-child,
+.partners li:last-child {
+    margin-right: 0;
+}
+
+.footer-contact li a:link,
+.footer-contact li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-contact li {
+    color: #888;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ---------------------------------------------------*/
+/* ANIMATION */
+/* ---------------------------------------------------*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+	opacity: 0;
+}
+
+.js-wp-1.animated,
+.js-wp-2.animated,
+.js-wp-3.animated {
+	opacity: 1;
+}
+

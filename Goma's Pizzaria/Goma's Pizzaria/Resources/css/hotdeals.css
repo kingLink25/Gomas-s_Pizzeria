@@ -1,0 +1,83 @@
+/* ---------------------------------------------------*/
+/* BASIC SETUP */
+/* ---------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width:1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 0;
+}
+
+/* ---------------------------------------------------*/
+/* BASIC HEADER STYLE */
+/* ---------------------------------------------------*/
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 235%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 175%;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 5px;
+    color: #cbcbcb;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.header {
+	background-color: rgba(255, 69, 69, 0.58);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
